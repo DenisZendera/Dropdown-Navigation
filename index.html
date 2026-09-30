@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+
+  <header>
+
+    <p class="logo">snap</p>
+
+    <button id="open-menu" class="menu">
+      <img  class="menu-btn" alt=" open menu" src="images/icon-menu.svg">
+    </button>
+
+    <div class="nav">
+      <div class="sidebar">
+        <div class="close-section">
+          <button id="close-menu" class="menu">
+            <img  class="menu-btn" alt="close menu" src="images/icon-close-menu.svg">
+          </button>
+        </div>
+
+        <ul class="list-items">
+          <li class="dropdown features">
+            <button class="list-link features">
+              Features<img class="fdrop" alt="" src="images/icon-arrow-down.svg">
+            </button>
+
+            <ul class="dropdown-menu" id="features">
+              <li class="drop-item">
+                <img alt="" src="images/icon-todo.svg">
+                <a href="#" class="sub-link">Todo List</a>
+              </li>
+
+              <li class="drop-item">
+                <img alt="" src="images/icon-calendar.svg">
+                <a href="#" class="sub-link">Calendar</a>
+              </li>
+
+              <li class="drop-item">
+                <img alt="" src="images/icon-reminders.svg">
+                <a href="#" class="sub-link">Reminders</a>
+              </li>
+
+              <li class="drop-item">
+                <img alt="" src="images/icon-planning.svg">
+                <a href="#" class="sub-link">Planning</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown company">
+            <button class="list-link company">
+              Company<img class="cdrop" alt="" src="images/icon-arrow-down.svg">
+            </button>
+
+            <ul class="dropdown-menu" id="company">
+              <li class="drop-item">
+                <a href="#" class="sub-link">History</a>
+              </li>
+
+              <li class="drop-item">
+                <a href="#" class="sub-link">Our Team</a>
+              </li>
+
+              <li class="drop-item">
+                <a href="#" class="sub-link">Blog</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-item"><a href="#" class="link">Careers</a></li>
+          <li class="list-item"><a href="#" class="link">About</a></li>
+        </ul>
+
+        <div class="buttons">
+          <a href="#" class="login">Login</a>
+          <button class="register">Register</button>
+        </div>
+        
+      </div>  
+    </div>
+  </header>
+
+  <main>
+    <div class="hero-image">
+      <picture>
+        <source media="(min-width: 1124px)" srcset="images/image-hero-desktop.png">
+        <img id="hero" src="images/image-hero-mobile.png" alt="hero image">
+      </picture>
+    </div>
+    
+    <div class="hero-title">
+      <h1>Make remote work</h1>
+    </div>
+
+    <div class="hero-description">
+      <p>
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+
+      <button class="learn">Learn more</button>
+    </div>
+
+    <div class="brands">
+      <div class="brand">
+        <img src="images/client-databiz.svg" alt="databiz" draggable="false">
+      </div>
+      <div class="brand">
+        <img src="images/client-audiophile.svg" alt="audiophile" draggable="false">
+      </div>
+      <div class="brand">
+        <img src="images/client-meet.svg" alt="meet" draggable="false">
+      </div>
+      <div class="brand">
+        <img src="images/client-maker.svg" alt="maker" draggable="false">
+      </div>
+
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
